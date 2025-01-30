@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reveal Event</title>
+  <style>
+    body {
+      justify-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      width: 600px;
+      background-color: #ffffff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .boxes {
+      border: solid 2px #007bff;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #e7f3ff;
+      color: #007bff;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .boxes:hover {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    .hidden-content {
+      display: none;
+    }
+
+    .hidden-content.reveal-btn {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-heading">Event listeners</h1>
+  <div class="container">
+    <button class="reveal-btn boxes">Reveal More (Click Me👆🏻)</button>
+    <div class="hidden-content boxes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem fugiat laborum ipsum expedita tempora quidem aperiam fugit beatae. Non sit nostrum tempore, sint, tenetur minus natus odit dolores error adipisci dolorum quasi quisquam harum impedit ad iure rerum placeat officiis! Maiores praesentium ducimus illo saepe quidem debitis odio deleniti.</div>
+  </div>
+  <script src="hidden-text.js"></script>
+</body>
+</html>
