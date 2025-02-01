@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Propagation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      padding-top: 50px;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .div2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 300px;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: lightblue;
+      position: relative;
+    }
+
+    .div1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 20px;
+      width: 80px;
+      height: 120px;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: lightgreen;
+      position: absolute;
+    }
+
+    button {
+      width: 60px;
+      height: 20px;
+      position: absolute;
+      bottom: 30px;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: lightcoral;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="div2">
+    2
+    <div class="div1">
+      1
+      <button>Click</button>
+    </div>
+  </div>
+
+
+  <script src="propagation.js"></script>
+</body>
+</html>
