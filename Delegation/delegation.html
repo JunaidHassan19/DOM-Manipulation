@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master DOM Manipulation </title>
+</head>
+<style>
+  * {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #555;
+  border: 2px dashed #777;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+</style>
+<body>
+
+  <div class="container">
+    <ul id="sports">
+      <li id="football">Football</li>
+      <li id="basketball">Basketball</li>
+      <li id="boxing">Boxing</li>
+      <li id="tennis">Tennis</li>
+      <li id="golf">Golf</li>
+    </ul>
+
+  </div>
+  
+  <script src="delegation.js"></script>
+</body>
+</html>
