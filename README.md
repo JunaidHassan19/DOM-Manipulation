@@ -13,6 +13,13 @@ This repository contains daily topics and examples related to DOM (Document Obje
 - Working with Forms
 - Advanced DOM Manipulation Techniques
 
+## Project Levels
+
+1 - Beginner
+2 - Beginner+
+3 - Intermediate
+4 -  Pro
+
 ## How to Use This Repository
 
 Each topic will be added as a separate file or folder with related examples and explanations. Check back daily for new content and updates.
